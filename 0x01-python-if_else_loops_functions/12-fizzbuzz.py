@@ -11,7 +11,7 @@ def fizzbuzz():
                 print("Fizz")
             else:
                 print("Fizz", end=' ')
-        elif i % 5 == 0
+        elif i % 5 == 0:
             if i == 100:
                 print("Buzz")
             else:

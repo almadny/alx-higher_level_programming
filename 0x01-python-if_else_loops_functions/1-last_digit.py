@@ -7,7 +7,7 @@ if number < 0:
 else:
     rem = number % 10
 if rem > 5:
-    print(f"The last digit of {number} is {rem} and is greater than 5"}
+    print(f"The last digit of {number} is {rem} and is greater than 5")
 elif rem == 0:
     print(f"The last digit of {number} is {rem} and is 0")
 elif rem < 6 and rem != 0:

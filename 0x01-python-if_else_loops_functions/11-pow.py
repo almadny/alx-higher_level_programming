@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def pow(a, b):
-    result = 
+    result = 1
     if b < 0:
         b *= -1
         while b > 0:

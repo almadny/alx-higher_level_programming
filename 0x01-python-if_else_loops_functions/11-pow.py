@@ -10,5 +10,5 @@ def pow(a, b):
     else:
         while b > 0:
             result *= a
-            b -= 1 
+            b -= 1
     return result

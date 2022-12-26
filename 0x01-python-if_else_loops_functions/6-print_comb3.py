@@ -6,6 +6,6 @@ while i < 10:
         if i == 8 and j == i + 1:
             print("{}{}".format(i, j))
         else:
-            print("{}{}".format(i, j),end=", ")
-        j += 1 
+            print("{}{}".format(i, j), end=", ")
+        j += 1
     i += 1

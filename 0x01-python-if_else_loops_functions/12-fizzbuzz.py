@@ -16,7 +16,7 @@ def fizzbuzz():
                 print("Buzz")
             else:
                 print("Buzz", end=' ')
-        else
+        else:
             if i == 100:
                 print(i)
             else:

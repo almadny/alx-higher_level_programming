@@ -4,4 +4,4 @@ for i in range(122, 96, -1):
         num = i
     else:
         num = i - 32
-    print(chr(num), end='')
+    print("{}".format(chr(num)), end='')

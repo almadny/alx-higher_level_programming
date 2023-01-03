@@ -14,6 +14,10 @@ class Rectangle:
         self.width = width
         self.height = height
     
+    def __del__(self):
+        """ Deletes a rectangle object """
+        print("Bye Rectangle...")
+    
     def __str__(self):
         """ Returns the string representation of the rectangle object """
         if self.width == 0 or self.height == 0:
@@ -64,7 +68,3 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.width + self.height)
-
-    def __del__(self):
-        """ Deletes a rectangle object """
-        print("Bye Rectangle...")

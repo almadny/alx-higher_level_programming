@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """ 
     A Python module that represents 
 
@@ -11,15 +12,18 @@
 class Rectangle:
     """ A Class that defines a rectangle """
     
+    
     def __init__(self, width=0, height=0):
         """ Initializes the instance variables """
         self.width = width
         self.height = height
     
+    
     @property
     def width(self):
         """ Returns the width of the rectangle """
         return self.__width
+    
     
     @width.setter
     def width(self, value):
@@ -31,10 +35,12 @@ class Rectangle:
         else:
             self.__width = value
     
+    
     @property
     def height(self):
         """ Returns the height of the rectangle """
         return self.__height
+    
     
     @height.setter
     def height(self, value):

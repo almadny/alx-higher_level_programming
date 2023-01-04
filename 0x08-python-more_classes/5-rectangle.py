@@ -6,6 +6,7 @@
     width 
     and height
 """
+
 class Rectangle:
     """ A Class that defines a rectangle """
     
@@ -16,7 +17,7 @@ class Rectangle:
     
     def __del__(self):
         """ Deletes a rectangle object """
-        print("Bye Rectangle...")
+        print("Bye rectangle...")
     
     def __str__(self):
         """ Returns the string representation of the rectangle object """

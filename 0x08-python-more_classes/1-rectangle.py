@@ -6,6 +6,7 @@
     width 
     and height
 """
+
 class Rectangle:
     """ A Class that defines a rectangle """
     

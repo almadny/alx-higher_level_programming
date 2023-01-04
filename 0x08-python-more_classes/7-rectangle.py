@@ -27,7 +27,7 @@ class Rectangle:
         """ Returns the string representation of the rectangle object """
         if self.width == 0 or self.height == 0:
             return ""
-        return "\n".join(Rectangle.print_symbol * self.width
+        return "\n".join(str(self.print_symbol) * self.width
                          for i in range(self.height))
 
     def __repr__(self):

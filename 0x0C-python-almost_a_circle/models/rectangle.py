@@ -82,4 +82,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """ Overwrites the internal string repr"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.x, self.y, self.width, self.height)

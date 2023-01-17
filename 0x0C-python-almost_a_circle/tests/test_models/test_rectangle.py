@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ A Module to test base class from our models directory """
 import unittest
 from models.rectangle import Rectangle

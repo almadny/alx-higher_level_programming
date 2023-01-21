@@ -90,6 +90,7 @@ class Rectangle(Base):
                 self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args):
+        """ Update attributes """
         if len(args) < 2:
             self.id = args[0]
         elif len(args) < 3:

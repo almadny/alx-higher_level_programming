@@ -1,9 +1,6 @@
 #!/usr/bin/node
-let i = 2;
-while (process.argv[i]) {
-  console.log(process.argv[i]);
-  i++;
-}
-if (i < 3) {
+if (process.argv[2]) {
+  console.log(process.argv[2]);
+} else {
   console.log('No argument');
 }

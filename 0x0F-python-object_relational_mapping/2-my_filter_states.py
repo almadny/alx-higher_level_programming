@@ -17,10 +17,9 @@ if __name__ == "__main__":
         print(e)
     else:
         cur = conn.cursor()
-        query = f"SELECT * FROM hbtn_0e_0_usa.states\
-                WHERE states.name = {sys.argv[4]}\
-                ORDER BY states.id;"
-        cur.execute(query)
+        cur.execute("SELECT * FROM hbtn_0e_0_usa.states\
+                    WHERE states.name = '%s'\
+                    ORDER BY states.id" % search_string)
         rows = cur.fetchall()
         for row in rows:
             print(row)

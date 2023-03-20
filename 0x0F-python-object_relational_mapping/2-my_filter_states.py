@@ -18,8 +18,7 @@ if __name__ == "__main__":
     else:
         cur = conn.cursor()
         cur.execute("SELECT * FROM hbtn_0e_0_usa.states\
-                    WHERE states.name = '%s'\
-                    ORDER BY states.id" % search_string)
+                    WHERE states.name = '%s'" % search_string)
         rows = cur.fetchall()
         for row in rows:
             print(row)

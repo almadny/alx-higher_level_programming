@@ -8,7 +8,6 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     dbname = sys.argv[3]
-    search_string = sys.argv[4]
     try:
         conn = MySQLdb.connect(
             host="localhost", port=3306,
@@ -17,9 +16,10 @@ if __name__ == "__main__":
         print(e)
     else:
         cur = conn.cursor()
-        cur.execute("SELECT * FROM hbtn_0e_0_usa.states\
-                    WHERE states.name = (%s)",
-                    (search_string,))
+        cur.execute("SELECT cities.id, cities.name, states.name\
+                    FROM hbtn_0e_4_usa.cities\
+                    INNER JOIN hbtn_0e_4_usa.states\
+                    ON cities.state_id = states.id")
         rows = cur.fetchall()
         for row in rows:
             print(row)

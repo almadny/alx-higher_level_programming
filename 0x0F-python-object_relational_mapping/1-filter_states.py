@@ -16,10 +16,9 @@ if __name__ == "__main__":
         print(e)
     else:
         cur = conn.cursor()
-        cur.execute("SELECT * FROM hbtn_0e_0_usa.states\
+        cur.execute("SELECT * FROM states\
                     WHERE states.name\
-                    LIKE 'N%'\
-                    ORDER BY states.id")
+                    LIKE BINARY 'N%'")
         rows = cur.fetchall()
         for row in rows:
             print(row)

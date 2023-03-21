@@ -18,7 +18,7 @@ if __name__ == "__main__":
     else:
         cur = conn.cursor()
         cur.execute("SELECT * FROM states\
-                    WHERE name = (%s)", 
+                    WHERE name = (%s)",
                     (search_string,))
         rows = cur.fetchall()
         for row in rows:

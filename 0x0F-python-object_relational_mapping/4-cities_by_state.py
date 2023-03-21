@@ -17,8 +17,8 @@ if __name__ == "__main__":
     else:
         cur = conn.cursor()
         cur.execute("SELECT cities.id, cities.name, states.name\
-                    FROM hbtn_0e_4_usa.cities\
-                    INNER JOIN hbtn_0e_4_usa.states\
+                    FROM cities\
+                    INNER JOIN states\
                     ON cities.state_id = states.id")
         rows = cur.fetchall()
         for row in rows:

@@ -18,13 +18,12 @@ if __name__ == "__main__":
     else:
         cur = conn.cursor()
         cur.execute("SELECT cities.name\
-                    FROM hbtn_0e_4_usa.cities\
-                    INNER JOIN hbtn_0e_4_usa.states\
+                    FROM cities\
+                    INNER JOIN states\
                     ON cities.state_id = states.id\
                     WHERE states.name = (%s)", (search_string,))
         rows = cur.fetchall()
-        for row in rows:
-            for item in row:
-                print(item, end=', ')
+        out = ", ".join([item for row in rows for item in row])
+        print(out)
         cur.close()
         conn.close()

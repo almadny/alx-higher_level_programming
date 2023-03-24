@@ -17,4 +17,5 @@ if __name__ == "__main__":
         print('Not Found')
     else:
         for state in states:
-            print(state[0])
+            for item in state:
+                print(item)

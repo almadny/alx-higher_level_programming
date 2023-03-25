@@ -13,6 +13,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    stat = session.query(State, City).join(City, State.id==City.state_id).all()
+    stat = session.query(State, City).join(
+                         City, State.id == City.state_id).all()
     for (state, city) in stat:
         print(f"{state.name}: ({city.id}) {city.name}")

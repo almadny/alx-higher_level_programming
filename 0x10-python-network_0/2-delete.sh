@@ -1,3 +1,3 @@
 #!/bin/bash
 # Display the body of HTTP reponse using curl command
-curl -L -X DELETE $1 
+curl -sSL -X DELETE "$1" 

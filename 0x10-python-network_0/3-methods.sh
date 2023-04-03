@@ -1,3 +1,3 @@
-#!/bin/bash
+#i!/bin/bash
 # Display the body of HTTP reponse using curl command
-curl -I $1 
+curl -sSLI "$1" | sed -n 's/^Allow: //ip' 

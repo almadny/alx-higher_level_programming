@@ -9,6 +9,6 @@ if __name__ == "__main__":
         cont = content.read()
 
     print("Body response:")
-    print("    - type: {}".format(type(cont)))
-    print("    - content: {}".format(cont))
-    print("    - utf8 content: {}".format(cont.decode(encoding='utf-8')))
+    print("\t- type: {}".format(type(cont)))
+    print("\t- content: {}".format(cont))
+    print("\t- utf8 content: {}".format(cont.decode(encoding='utf-8')))

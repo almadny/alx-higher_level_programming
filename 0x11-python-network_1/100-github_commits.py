@@ -9,7 +9,12 @@ if __name__ == "__main__":
     owner = sys.argv[2]
     url = f"https://api.github.com/repos/{owner}/{repo}/commits"
     resp = requests.get(url).json()
-    for i in range(10):
+
+    if len(resp) < 10:
+        limit = len(resp)
+    else:
+        limit = 10
+    for i in range(limit):
         print("{}: {}".format(
                     resp[i].get('sha'),
                     resp[i].get('commit').get('author').get('name'),
